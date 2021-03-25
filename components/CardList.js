@@ -5,7 +5,7 @@ export default function CardList({ data }) {
     return (
         <div className="mt-4 card-grid">
             {data.map((item) => (
-                <Card>
+                <Card key={item.id}>
                     <Card.Body>
                         <Card.Title>{item.title.slice(0, 30)}</Card.Title>
                         <p>
